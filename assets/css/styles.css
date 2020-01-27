@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 9px #00000038;
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-content {
+    background: url(../img/ticket-bg2.jpg);
+    background-size: 710px;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 450px;
+    height: 720px;
+    position: relative;
+    box-shadow: 0 0 15px #00000080;
+}
+.card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .4;
+    z-index: 0;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.location p {
+    text-align: center;
+    font-size: 22px;
+}
+
+.location span {
+    display: block;
+    font-size: 12px;
+    opacity: .6;
+}
+
+.location .fas {
+    display: inline-block;
+    margin: 0 30px;
+    opacity: .8;
+    font-size: 24px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #ffffff75;
+    margin: auto;
+    position: relative;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 17px;
+    box-shadow: 0 0 5px #fff;
+}
+
+.circle P:first-of-type {
+    opacity: .6;
+    margin: 0;
+    font-weight: 100;
+}
+.circle P:last-of-type {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+
+.card-info, .card {
+    position: relative;
+}
+
+.card {
+    margin-top: 40px;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    background: #2b2a2a;
+    height: 30px;
+    width: 30px;
+    right: -6px;
+    bottom: 130px;
+    border-radius: 50%;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    background: #2b2a2a;
+    height: 30px;
+    width: 30px;
+    left: -6px;
+    bottom: 130px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.background {
+    background: #2b2a2a;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    z-index: -1;
+}
+
+.top-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #d62951;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.top-card p {
+    opacity: .6;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 17px 0;
+}
+
+.bottom-card {
+    background: #fff;
+    position: relative;
+}
+
+.bottom-card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #7979791f;
+}
+
+.bottom-card > p {
+    padding-top: 25px;
+}
+
+
+.bottom-card p {
+    color: #d62951;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: none;
+    margin: 0;
+}
+
+.bottom-card > span {
+    display: block;
+    margin-top: 8px;
+    color: #232323b3;
+    text-shadow: none;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.bottom-card > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0 50px;
+}
+
+.bottom-card > div > div {
+    position: relative;
+}
+
+.bottom-card > div > div::after {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    background: #7979791f;
+    width: 1px;
+}
+
+.bottom-card > div > div:last-of-type::after {
+    display: none;
+}
+
+.bottom-card > div span {
+    display: block;
+    margin-top: 3px;
+    color: #232323b3;
+    text-shadow: none;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.bottom-card > div p {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.barcode {
+    padding: 50px 0 24px;
+    background: #fff;
+}
+
+.barcode img {
+    max-width: 330px;
+    margin: auto;
+    display: block;
+}
+
+
+.logo img {
+    max-width: 100px;
+}
