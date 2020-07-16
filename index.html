@@ -1,60 +1,641 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172856577-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172856577-1');
+    </script>
+    <!-- favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#292a2e">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#292a2e">
+    <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Som front-end developer a zameriavam sa na tvorbu a programovanie dizajnu webových stránok. Toto je webová stránka môjho portfólia.">
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="place">
+    <meta property="og:image" content="assets/img/logo.png">
+    <meta property="og:title" content="Front-end webdeveloper | Michal Závodský - Webdesign">
+    <meta property="og:description" content="Front-end webdeveloper, dizajn webových stránok.">
+    <meta property="og:site_name" content="Názov webovej stránky">
+    <meta property="og:url" content="https://fibbrlz.github.io/">
+    <link rel="canonical" href="https://fibbrlz.github.io/">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:100,300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#292a2e">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#292a2e">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#292a2e">
+    <title>Front-end webdeveloper | Michal Závodský - Webdesign</title>
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,700|Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Zavodsky - Webdesign</title>
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
 </head>
 <body>
-
-<h1>Just a test, don't mind me (:</h1>
-<div class="card-wrap">
-    <div class="card-content">
-        <div class="card-info">
-            <div class="location">
-                <p>BTS <span>Bratislava</span></p>
-                <span class="fas fa-plane"></span>
-                <p>FCO <span>Rým</span></p>
-            </div>
-            <div class="circle">
-                <p>Odlietame za:</p>
-                <p>32 dní</p>
-            </div>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="https://fibbrlz.github.io/" class="logo">MZ</a>
+                <ul>
+                    <li>
+                        <a href="#projects">
+                            <div class="borders">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            Projekty
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-me">
+                            <div class="borders">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            O mne
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <div class="borders">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-btn">
+                    <span>MENU</span>
+                    <span class="lines">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </div>
+            </nav>
         </div>
-        <div class="card">
-            <div class="background"></div>
-            <div class="top-card">
-                <div class="logo"><img src="assets/img/logo.png" alt=""></div>
-                <p>Číslo letu: ZA114EY</p>
-            </div>
-            <div class="bottom-card">
-                <p>cestujúci</p>
-                <span>Mgr. Michal Závodský</span> 
-                <div>
-                    <div>
-                        <p>Terminál</p>
-                        <span>2B</span>
-                    </div>
-                    <div>
-                        <p>Brána</p>
-                        <span>14</span>
-                    </div>
-                    <div>
-                        <p>sedadlo</p>
-                        <span>23D</span>
+    </header>
+<main>
+<div class="parallax-container">
+    <div class="hero-wrap">
+        <canvas class="background"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="third-layer"></div>
+                <div class="second-layer"></div>
+                <div class="first-layer wow animated fadeIn">
+                    <h1>Som junior front-end developer</h1>
+                    <p>A toto je webová stránka môjho portfólia.</p>
+                    <div class="cta-btn">
+                        <a href="#projects" class="btn">
+                            <div class="borders">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            Projekty
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="barcode">
-                <img src="assets/img/barcode.png" alt="">
-            </div>
+                <!-- <div class="main-arrow"></div> -->
+            </div>    
         </div>
     </div>
 </div>
-    
+<section class="projects" id="projects">
+    <div>
+        <div class="container">
+            <div>
+                <h2 class="h2-heading">Moje projekty</h2>
+                <p>Môj dizajn aj kód</p>
+            </div>
+            <div class="projects-wrap">
+                <div class="project">
+                    <div class="desc">
+                        <h3>Pizza Lazzi</h3>
+                        <p>Koncept webovej stránky pre pizzériu. Keďže súčasný dizajn podniku nezodpovedal kvalite pizze, rozhodol som sa ho vo svojom voľnom čase vylepšiť :).
+                            <strong>Responzivita ešte nie je dokončená, pracujem na tom. :)</strong>
+                        </p>
+                    </div>
+                    <div class="screenshot">
+                        <a href="https://pizzalazzi.netlify.app/" target="_blank" rel="noopener"><img src="assets/img/pizzalazzi.png" alt="screenshot konceptu webovej stránky"></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <h3>Oki Coffee</h3>
+                        <p>Vytvorenie nového dizajnu webovej stránky s požiadavkou využitia pôvodných farieb a loga spoločnosti. 
+                            <strong>Web je stále v procese vývoja</strong> a <strong>ešte</strong> nie je prispôsobený na mobilné zariadenia.
+                        </p>
+                    </div>
+                    <div class="screenshot">
+                        <a href="https://okicoffee.netlify.app/" target="_blank" rel="noopener"><img src="assets/img/okicoffee.png" alt="screenshot konceptu webovej stránky"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects">
+    <div class="container">
+        <div>
+            <h2 class="h2-heading">Projekty, na ktorých som pracoval</h2>
+            <p>Webové stránky nakódené podľa dodaného dizajnu</p>
+        </div>
+        <div class="projects-wrap">
+            <div class="project">
+                <div class="desc">
+                    <h3>Barelli Rifles</h3>
+                    <p>Luxusný dizajn webovej stránky pre unikátne ručne vyrábané poľovnícke zbrane. Ešte chýbajú nejaké texty.:)</p>
+                </div>
+                <div class="screenshot">
+                    <a href="http://barelli.dwtest.sk/" target="_blank" rel="noopener"><img src="assets/img/barelli.png" alt="screenshot konceptu webovej stránky"></a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="desc">
+                    <h3>DVC Bublina</h3>
+                    <p>Veselá a farebná webová stránka pre Doučovacie a vzdelávacie centrum Bublina.</p>
+                </div>
+                <div class="screenshot">
+                    <a href="http://dvcbublina.sk/" target="_blank" rel="noopener"><img src="assets/img/bublina.png" alt="screenshot konceptu webovej stránky"></a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="desc">
+                    <h3>Mediaspell</h3>
+                    <p>Webová stránka reklamnej agentúry s atypickým konceptom navigácie.</p>
+                </div>
+                <div class="screenshot">
+                    <a href="https://mediaspell.sk/" target="_blank" rel="noopener"><img src="assets/img/mediaspell.png" alt="screenshot konceptu webovej stránky"></a>
+                </div>
+            </div>
+        </div>
+        <div class="projects-small">
+            <a href="https://produktova-foto.sk/" target="_blank" rel="noopener" class="project-small wow animated fadeInUp">
+                <div class="borders">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="screenshot">
+                    <img src="assets/img/produktova-foto.png" alt="screenshot konceptu webovej stránky">
+                </div>
+                <div class="desc">
+                    <h3>Produktová fotografia</h3>
+                    <p>Webová stránka fotografických služieb a produktového portfólia.</p>
+                </div>
+            </a>
+            <a href="https://development.licitor.sk/" target="_blank" rel="noopener" class="project-small wow animated fadeInUp" data-wow-delay=".1s">
+                <div class="borders">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="screenshot">
+                    <img src="assets/img/licitor.png" alt="screenshot konceptu webovej stránky">
+                </div>
+                <div class="desc">
+                    <h3>Licitor Development</h3>
+                    <p>Redesign existujúcej webovej stránky.</p>
+                </div>
+            </a>
+            <a href="http://www.sdpplus.sk/" target="_blank" rel="noopener" class="project-small wow animated fadeInUp" data-wow-delay=".2s">
+                <div class="borders">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="screenshot">
+                    <img src="assets/img/sdpplus.png" alt="screenshot konceptu webovej stránky">
+                </div>
+                <div class="desc">
+                    <h3>SDP+</h3>
+                    <p>Jedna z mojich prvých webových stránok.</p>
+                </div>
+            </a>
+            <a href="http://www.garisson.eu/" target="_blank" rel="noopener"class="project-small wow animated fadeInUp" data-wow-delay=".3s">
+                <div class="borders">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="screenshot">
+                    <img src="assets/img/garisson.png" alt="screenshot konceptu webovej stránky">
+                </div>
+                <div class="desc">
+                    <h3>Garisson</h3>
+                    <p>Ešte nedokončený web slúžiaci na prezentáciu ponuky produktov.</p>
+                </div>
+            </a>
+            <div class="project-small wow animated fadeInUp" data-wow-delay=".4s">
+                <h3>A iné...</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-me" id="about-me">
+    <div class="container">
+        <h2 class="h2-heading">O mne</h2>
+        <p class="me">Vitajte na webovej stránke môjho portfólia, ktoré priebežne aktualizujem. Volám sa <strong>Michal Závodský</strong> a venujem sa front-end web developmentu. 
+            Vyštudoval som Univerzitu sv. Cyrila a Metoda v Trnave, odbor Masmediálna komunikácia a Marketing. 
+            Keďže ma viac zaujal vývoj webových stránok pracujem zhruba rok a pól ako front-end developer. Za tento čas som pracoval na viacerých projektoch, 
+            tie najhlavnejšie sú uvedené vyššie. Mám skúsenosti s prácou s <strong>HTML, CSS / SCSS a jQuery</strong>. Pracoval som už aj na niekoľkých Wordpress webových stránkach 
+            takže mám skúsenosti s <strong>Wordpressom</strong> a veľmi <strong>základným PHP</strong>. Tiež mám skúsenosti s tvorbou <strong>responzívnych webov a SEO</strong>.
+            Dohovorím sa aj po Anglicky. 
+            Momentálne si hľadám prácu ako front-end developer na juniorskej úrovni - čo neviem sa rád naučím :).
+        </p>
+        <div class="skills">
+            <h2 class="h2-heading">Moje skillZ</h2>
+            <p>Zatiaľ tu toho veľa nie je, ale učím sa...</p>
+            <div class="skills-grid">
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>HTML</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>CSS</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>SCSS</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="half max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>jQuery</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Javascript</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Angular 8</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span class="half max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>PHP</span>
+                    <div class="skill-meter">
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Wordpress</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Respoznívny dizajn</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Github</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="wow animated fadeInUp">
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>SEO</span>
+                    <div class="skill-meter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="max"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h2 class="h2-heading">Kontakt</h2>
+            <p>V prípade záujmu ma neváhajte kontaktovať prostredníctvom e-mailu alebo sociálnych sietí.</p>
+            <div class="social">
+                <div class="email">
+                    <p>Email</p>
+                    <script>
+                            /* email display */
+                            function onSubmit(token) {
+                                // document.getElementById("mail").submit();
+                                $('button.g-recaptcha.btn').fadeOut(function () {
+                                    $('.email p').after('<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#115;&#111;&#46;&#122;&#97;&#118;&#111;&#100;&#115;&#107;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#105;&#115;&#111;&#46;&#122;&#97;&#118;&#111;&#100;&#115;&#107;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>');
+                                });
+                            }
+                    </script>
+                    <button class="g-recaptcha btn" 
+                      data-sitekey="6LfnsbEZAAAAAGZ8h7t8EFM8YUJOYEGnJMpzkU85" 
+                      data-callback='onSubmit' 
+                      data-action='submit'>
+                    <div class="borders">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                      Zobraziť
+                    </button>
+
+                </div>
+                <div class="icons">
+                    <p>Sociálne siete</p>
+                    <div> 
+                        <a href="https://www.linkedin.com/in/michal-z%C3%A1vodsk%C3%BD-96b577176/" target="_blank" rel="noopener" class="linked-in">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/youwantsomeYT" target="_blank" rel="noopener" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/FiBBRLZ" target="_blank" rel="noopener" class="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fibbrlz/" target="_blank" rel="noopener" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.strava.com/athletes/31248571" target="_blank" rel="noopener" class="strava">
+                            <i class="fab fa-strava"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="copyright">
+        <span>2020 © MZ </span>
+        <span class="mz">Designed &amp; Developed by Závodský - Webdesign</span>
+    </div>
+</footer>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
