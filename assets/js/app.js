@@ -11,6 +11,12 @@ $(document).ready(function(){
     })
     wow.init();
 
+    // skill = new WOW({
+    //     offset: 80,
+    //     boxClass: 'active'
+    // })
+    // wow.init();
+
 
     /*functions */
     Particles.init({
@@ -133,54 +139,54 @@ $(document).ready(function(){
     }
 
 
-    function fillSkillMeter(block, skillMeter, inView) {
-        var timeout;
-        if (inView === true) {
-            block.find('.skill-meter span').each(function(i,el) {
-                var $this = $(this);
-                if($this.index() >= (skillMeter + 1)) {
-                    return;
-                } else {
-                    timeout = setTimeout(function() {
-                        $this.addClass('fill');
-                    }, i*150);
-                }
-            });
-        } else {
-            clearTimeout(timeout);
-            block.find('.skill-meter span').removeClass('fill');
-            return;
-        }
-    }
+    // function fillSkillMeter(block, skillMeter, inView) {
+    //     var timeout;
+    //     if (inView === true) {
+    //         block.find('.skill-meter span').each(function(i,el) {
+    //             var $this = $(this);
+    //             if($this.index() >= (skillMeter + 1)) {
+    //                 return;
+    //             } else {
+    //                 timeout = setTimeout(function() {
+    //                     $this.addClass('fill');
+    //                 }, i*150);
+    //             }
+    //         });
+    //     } else {
+    //         clearTimeout(timeout);
+    //         block.find('.skill-meter span').removeClass('fill');
+    //         return;
+    //     }
+    // }
 
 
-    function skillsFillAnimation() {
-        var skill = $('.skills-grid > div');
-        var top_of_element;
-        var bottom_of_element;
-        var bottom_of_screen;
-        var top_of_screen;
-        var skillMeter;
+    // function skillsFillAnimation() {
+    //     var skill = $('.skills-grid > div');
+    //     var top_of_element;
+    //     var bottom_of_element;
+    //     var bottom_of_screen;
+    //     var top_of_screen;
+    //     var skillMeter;
 
-        $(window).on('scroll', function() {
-            skill.each(function () {
-                top_of_element = $(this).offset().top;
-                bottom_of_element = $(this).offset().top + $(this).outerHeight();
-                bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-                top_of_screen = $(window).scrollTop();
+    //     $(window).on('scroll', function() {
+    //         skill.each(function () {
+    //             top_of_element = $(this).offset().top;
+    //             bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    //             bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    //             top_of_screen = $(window).scrollTop();
                 
-                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-                    $(this).addClass('active');
-                    skillMeter = $(this).find('.skill-meter .max').index();
-                    fillSkillMeter($(this), skillMeter, true); 
-                } else {
-                    fillSkillMeter($(this), skillMeter, false); 
-                    $(this).removeClass('active');
-                }
-            })
-        })
+    //             if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+    //                 $(this).addClass('active');
+    //                 skillMeter = $(this).find('.skill-meter .max').index();
+    //                 fillSkillMeter($(this), skillMeter, true); 
+    //             } else {
+    //                 fillSkillMeter($(this), skillMeter, false); 
+    //                 $(this).removeClass('active');
+    //             }
+    //         })
+    //     })
 
-    }
+    // }
 
 
 
@@ -194,7 +200,7 @@ $(document).ready(function(){
     toggleMenu();
     // heroScroll();
     headerScroll();
-    skillsFillAnimation();
+    // skillsFillAnimation();
 
 
 })

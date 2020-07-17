@@ -425,6 +425,7 @@ footer .copyright .mz a img {
 
 header {
   position: fixed;
+  transform: translateZ(50px);
   top: 0;
   left: 0;
   right: 0;
@@ -846,6 +847,8 @@ section.projects:nth-child(odd) .project .desc {
 .screenshot img {
   width: 100%;
   max-width: 800px;
+  height: 100%;
+  min-height: 150px;
 }
 
 .project:nth-child(even) .desc {
