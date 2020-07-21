@@ -26,8 +26,8 @@ $(document).ready(function(){
             $('.third-layer').css('--move-x', ''+xAxis+'');
             $('.third-layer').css('--move-y', ''+yAxis+'');
     
-            $('canvas.background').css('--move-x', ''+xAxis+'');
-            $('canvas.background').css('--move-y', ''+yAxis+'');
+            $('.background').css('--move-x', ''+xAxis+'');
+            $('.background').css('--move-y', ''+yAxis+'');
         });
     } 
 
@@ -51,35 +51,35 @@ $(document).ready(function(){
 
 
     /*functions */
-    Particles.init({
-        selector: '.background',
-        maxParticles: 100,
-        sizeVariations: 4,
-        color: "#151618",
-        // color: "#216bff",
-        connectParticles: true,
-        minDistance: 170,
-        speed: .35,
-        responsive: [
-            {
-              breakpoint: 768,
-              options: {
-                maxParticles: 100,
-              }
-            }, {
-              breakpoint: 450,
-              options: {
-                maxParticles: 70,
-              }
-            },{
-                breakpoint: 360,
-                options: {
-                    maxParticles: 40,
-                }
-            }
-          ]
-    });
-
+    // Particles.init({
+    //     selector: '.background',
+    //     maxParticles: 100,
+    //     sizeVariations: 4,
+    //     color: "#151618",
+    //     // color: "#216bff",
+    //     connectParticles: true,
+    //     minDistance: 170,
+    //     speed: .35,
+    //     responsive: [
+    //         {
+    //           breakpoint: 768,
+    //           options: {
+    //             maxParticles: 100,
+    //           }
+    //         }, {
+    //           breakpoint: 450,
+    //           options: {
+    //             maxParticles: 70,
+    //           }
+    //         },{
+    //             breakpoint: 360,
+    //             options: {
+    //                 maxParticles: 40,
+    //             }
+    //         }
+    //       ]
+    // });
+    particlesJS.load('particles-js', 'assets/particlesjs-config.json');
 
 
     //tilt effect for project description

@@ -102,12 +102,14 @@ html {
   scroll-behavior: smooth;
 }
 
-canvas.background {
+.background {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -626,7 +628,7 @@ header.scrolled .borders span {
 .hero-wrap .cta-btn .borders span {
   background-color: #141517;
 }
-.hero-wrap canvas.background {
+.hero-wrap .background {
   transform: translate(calc(4.5%*var(--move-x, 0)), calc(4.5%*var(--move-y, 0)));
 }
 .hero-wrap .first-layer {
