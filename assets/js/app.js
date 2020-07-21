@@ -1,5 +1,37 @@
-
 $(document).ready(function(){
+
+    function is_touch_device() {
+        var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+        var mq = function (query) {
+            return window.matchMedia(query).matches;
+        }
+        if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+            return true;
+        }
+        // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+        var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+        return mq(query);
+    }
+
+    if (is_touch_device() === false) {
+        $('.parallax-container').mousemove(function( event ){
+            let xAxis = (event.pageX-($(this).outerWidth()/2))/($(this).outerWidth()/2);
+            let yAxis =  (event.pageY-($(this).outerHeight()/2))/($(this).outerHeight()/2);
+            $('.first-layer').css('--move-x', ''+xAxis+'');
+            $('.first-layer').css('--move-y', ''+yAxis+'');
+            
+            $('.second-layer').css('--move-x', ''+xAxis+'');
+            $('.second-layer').css('--move-y', ''+yAxis+'');
+            
+            $('.third-layer').css('--move-x', ''+xAxis+'');
+            $('.third-layer').css('--move-y', ''+yAxis+'');
+    
+            $('canvas.background').css('--move-x', ''+xAxis+'');
+            $('canvas.background').css('--move-y', ''+yAxis+'');
+        });
+    } 
+
+    
 
     /* vars*/
     let $h = $('html');
@@ -48,21 +80,7 @@ $(document).ready(function(){
           ]
     });
 
-    $('.parallax-container').mousemove(function( event ){
-        let xAxis = (event.pageX-($(window).outerWidth()/2))/($(window).outerWidth()/2);
-        let yAxis =  (event.pageY-($(window).outerHeight()/2))/($(window).outerHeight()/2);
-        $('.first-layer').css('--move-x', ''+xAxis+'');
-        $('.first-layer').css('--move-y', ''+yAxis+'');
-        
-        $('.second-layer').css('--move-x', ''+xAxis+'');
-        $('.second-layer').css('--move-y', ''+yAxis+'');
-        
-        $('.third-layer').css('--move-x', ''+xAxis+'');
-        $('.third-layer').css('--move-y', ''+yAxis+'');
 
-        $('canvas.background').css('--move-x', ''+xAxis+'');
-        $('canvas.background').css('--move-y', ''+yAxis+'');
-    });
 
     //tilt effect for project description
     const tilt = $('.project .desc').tilt({
