@@ -644,6 +644,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         gtag('config', 'UA-172856577-1');
     </script>
     
+    <script>
+var dataLayer = window.dataLayer || [];
+dataLayer.push({
+    'event': 'transaction',
+    'value': 59.50, // cena nakupu bez dph,
+       'items':[{       
+        'productId': 'Id alebo nazov', //nazov alebo ID produktu
+        'price': 47.50, // cena nakupu bez dph
+        'product_category': 'shoes', // kategoria produktu
+        'quantity': '4' // množstvo
+      },
+      {
+        'productId': 'Id alebo nazov dalsi', //nazov alebo ID produktu
+        'price': 12, // cena nakupu bez dph
+        'product_category': 'tie', // kategoria produktu
+        'quantity': 1 // množstvo
+      }]
+});
+    
+</script>
+    
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
