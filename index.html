@@ -639,53 +639,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         gtag('config', 'UA-172856577-1');
     </script>
-    <script>
-var dataLayer = window.dataLayer || [];
-dataLayer.push({
-    'event': 'transaction', //nazov eventu čiže napr po dokončení objednavky order-complete alebo čo chceš, to iste aj pre product-view atď vždy to premenuj
-    'value': 59.50, // cena nakupu bez dph, davaj cenu bez dane , kludne ju premenuj na čosi lepšie ako totalPrice alebo čo
-       'items':[{       // idem je array produktov v košiku toto plati napr po dokončení objednavky tam hodíš tento objekt
-        'productId': 'Id alebo nazov', //nazov alebo ID produktu
-        'productPrice': 47.50, // cena tohto produktu bez dph
-        'productCategory': 'shoes', // kategoria produktu
-        'quantity': '4' // množstvo
-      },
-      {
-        'productId': 'Id alebo nazov dalsi', //nazov alebo ID produktu
-        'productPrice': 12, // cena dalšieho produktu bez dph
-        'productCategory': 'tie', // kategoria produktu
-        'quantity': 1 // množstvo
-      }]
-});
-    
-</script>
-
-
-//------------------------------------------------
-//priklad pre event kde si zákazník prezera konkretny produkt
-<script>
-var dataLayer = window.dataLayer || [];
-dataLayer.push({
-    'event': 'view-product', //nazov eventu príklad
-    'productPrice': 59.50, // cena produktu bez dane
-    'productId': 'Id alebo nazov', //nazov alebo ID produktu
-    'productCategory': 'shoes' // kategoria produktu
-});
-</script>
-
-
-//----------------------------------------------
-//priklad pre event zobrazení konkretnej stranky kategorie
-<script>
-var dataLayer = window.dataLayer || [];
-dataLayer.push({
-    'event': 'view-category', //nazov eventu príklad
-    'productCategoryView': 'shoes' // kategoria produktu
-});
-</script>
-
-
-
     
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
