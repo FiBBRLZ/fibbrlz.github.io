@@ -666,7 +666,7 @@ header.scrolled .borders span {
   left: 0;
   right: 0;
   background-color: #151618;
-  background-image: url(assets/img/texture.jpg);
+  background-image: url(../img/texture.jpg);
   background-blend-mode: multiply;
   opacity: 0.25;
   background-size: 100%;
