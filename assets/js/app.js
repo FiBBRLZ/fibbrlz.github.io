@@ -68,7 +68,6 @@ $(document).ready(function(){
 
 
 
-
     $('.set-bg').each(function(){
 		var imgSrc = $(this).find('img').attr('src');
 		$(this).css({
